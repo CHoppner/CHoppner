@@ -16,10 +16,15 @@
             padding: 40px 0; /* Add padding on top and bottom */
             text-align: center;
         }
-        h1, h2 {
+        h1 {
             font-family: 'Open Sans Condensed', sans-serif;
             font-weight: 700;
-            color: black; /* Set headers to black */
+            color: black; /* Keep "Welcome to Sounding Board" text black */
+        }
+        h2 {
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-weight: 700;
+            color: #004d40; /* Dark teal for other headers */
         }
         header {
             padding: 10px 0; /* Reduced padding to reduce space between header and next section */
@@ -47,15 +52,15 @@
         section {
             margin: 40px 0; /* Add top and bottom margins for more whitespace */
         }
-        /* One large blue box combining the first three sections */
+        /* One large light blue box combining the first three sections */
         .large-blue-box {
-            background-color: #e0f7fa; /* Light blue background */
+            background-color: #e0f7fa; /* Very light, calming blue */
             padding: 40px;
             border-radius: 10px; /* Rounded corners for the entire blue box */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
         }
         .disclaimer-section {
-            background-color: #fff9c4; /* Light yellow background */
+            background-color: #f5f5f5; /* Soft neutral grey */
             padding: 20px;
             margin-top: 40px;
             border-radius: 10px;
@@ -63,7 +68,7 @@
         }
         /* Hover effect for links */
         a {
-            color: #00796b;
+            color: #004d40; /* Dark teal for links */
             text-decoration: none;
         }
         a:hover {
@@ -72,19 +77,25 @@
         strong {
             font-weight: bold; /* Ensure strong tags display bold text */
         }
-        /* Dark blue button */
+        /* Navy blue button */
         .book-button {
-            background-color: #0d47a1; /* Dark blue color */
+            background-color: #0d47a1; /* Deep navy blue */
             color: white; /* White text */
             border: none;
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 15px 30px;
+            font-size: 18px;
             cursor: pointer;
             border-radius: 5px;
-            margin-top: 20px;
+            margin-top: 10px; /* Reduced margin to bring button closer to the section */
         }
         .book-button:hover {
             background-color: #1565c0; /* Lighter blue on hover */
+        }
+        /* Image resizing */
+        .profile-image {
+            width: 10%; /* Set to one-tenth of the original size */
+            margin: 20px auto;
+            display: block;
         }
     </style>
     <!-- Website Tab Icon -->
@@ -99,26 +110,23 @@
 
     <section class="large-blue-box">
         <h2>What is Sounding Board?</h2>
-        <p>Sounding Board was set up so that you can bounce around ideas, reflect on the day, vent about an experience, and more. Book a <strong>free 30-minute call</strong> with Chiara to discuss <strong>any topic on your mind</strong>.</p>
-        
-        <h2>Book a chat with Chiara now</h2>
-        <p><strong>Use this link to book your slot:</strong> <a href="https://calendly.com/hoppner-chiara/30min" target="_blank">https://calendly.com/hoppner-chiara/30min</a>. Looking forward to connect!</p>
+        <p>Sounding Board was set up for you to bounce around ideas, reflect on the day, vent about an experience, and more. Book a <strong>free 30-minute call</strong> with Chiara to discuss <strong>any topic on your mind</strong>.</p>
 
-        <!-- Dark blue button under the text -->
+        <!-- Navy blue button for booking, moved closer to the section -->
         <a href="https://calendly.com/hoppner-chiara/30min" target="_blank">
-            <button class="book-button">Book</button>
+            <button class="book-button">Book a chat with Chiara now</button>
         </a>
         
         <h2>About your conversation partner</h2>
         <p><strong>Hi, I'm Chiara,</strong> a 25-year old Strategy Consultant living in Dubai. I am half-German, half-French and love outdoor sports, exploring new locations and meeting people from all walks of life. Let's have a chat!</p>
 
-        <!-- Adding the image below the "About your conversation partner" section -->
-        <img src="./images/KME52833-2.jpg" alt="Chiara's Picture" style="max-width:100%; height:auto; margin-top:20px;">
+        <!-- Centered image, one-tenth size -->
+        <img src="./images/KME52833-2.jpg" alt="Chiara's Picture" class="profile-image">
     </section>
 
     <section class="disclaimer-section">
         <h2>Disclaimer</h2>
-        <p>A call with Sounding Board is intended for support purposes only. <strong>No medical advice, counseling, or similar service will be provided.</strong> Participants should consult with a qualified healthcare professional for medical or mental health concerns.</p>
+        <p>A Sounding Board call provides an open space to discuss any topic of your choice. Chiara will actively listen and engage with empathy, without giving direct advice. <strong>For medical or mental health concerns, please consult a qualified healthcare professional.</strong></p>
     </section>
 
 </body>
