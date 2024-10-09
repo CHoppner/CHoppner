@@ -19,6 +19,7 @@
         h1, h2 {
             font-family: 'Open Sans Condensed', sans-serif;
             font-weight: 700;
+            color: black; /* Set headers to black */
         }
         header {
             padding: 10px 0; /* Reduced padding to reduce space between header and next section */
@@ -36,7 +37,6 @@
             font-size: 28px;
             margin: 20px 0;
             letter-spacing: 1px; /* Increases spacing between letters */
-            color: #00796b; /* Teal color to stand out */
         }
         p {
             font-size: 18px;
@@ -72,6 +72,20 @@
         strong {
             font-weight: bold; /* Ensure strong tags display bold text */
         }
+        /* Dark blue button */
+        .book-button {
+            background-color: #0d47a1; /* Dark blue color */
+            color: white; /* White text */
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .book-button:hover {
+            background-color: #1565c0; /* Lighter blue on hover */
+        }
     </style>
     <!-- Website Tab Icon -->
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
@@ -89,6 +103,11 @@
         
         <h2>Book a chat with Chiara now</h2>
         <p><strong>Use this link to book your slot:</strong> <a href="https://calendly.com/hoppner-chiara/30min" target="_blank">https://calendly.com/hoppner-chiara/30min</a>. Looking forward to connect!</p>
+
+        <!-- Dark blue button under the text -->
+        <a href="https://calendly.com/hoppner-chiara/30min" target="_blank">
+            <button class="book-button">Book</button>
+        </a>
         
         <h2>About your conversation partner</h2>
         <p><strong>Hi, I'm Chiara,</strong> a 25-year old Strategy Consultant living in Dubai. I am half-German, half-French and love outdoor sports, exploring new locations and meeting people from all walks of life. Let's have a chat!</p>
